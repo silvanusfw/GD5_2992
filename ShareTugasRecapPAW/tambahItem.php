@@ -60,7 +60,7 @@ if (!isset($_SESSION["host"])) {
       <button type="submit">Simpan Item</button>
     </form>
   </main>
-z`
+
   <script>
     function hitungPerOrang() {
       const harga = document.getElementById("hargaItem").value ;
