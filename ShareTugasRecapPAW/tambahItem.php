@@ -41,9 +41,9 @@ if (!isset($_SESSION["host"])) {
         <input type="number" name="jumlahOrang" id="jumlahOrangItem" min="1" required>
       </p>
       <p>
-        <button type="button" onclick="hitungSplit()">Hitung Otomatis</button>
+        <button type="button" onclick="hitungPerOrang()">Hitung Otomatis</button>
       </p>
-      <p id="hasilHitung"></p>
+      <p id="hasilSplit"></p>
 
       <p>
         <label>Status Pembayaran:</label><br>
@@ -60,11 +60,11 @@ if (!isset($_SESSION["host"])) {
       <button type="submit">Simpan Item</button>
     </form>
   </main>
-
+z`
   <script>
     function hitungPerOrang() {
-      const harga = document.getElementById("hargaItem").value;
-      const jumlahOrang = document.getElementById("jumlahOrangItem").value;
+      const harga = document.getElementById("hargaItem").value ;
+      const jumlahOrang = document.getElementById("jumlahOrangItem").value ;
       const perOrang = harga / jumlahOrang;
       document.getElementById("hasilSplit").innerText = "Per orang: Rp" + perOrang;
     }
